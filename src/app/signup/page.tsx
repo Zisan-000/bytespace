@@ -160,7 +160,7 @@ export default function SignUpPage() {
                 </div>
               </div>
               <div className="flex items-center justify-start mt-1">
-                {[1, 2, 3, 4, 5].map((i) => (
+                {[1, 2, 3, 4].map((i) => (
                   <div
                     key={i}
                     className="w-8 h-8 -ml-3 first:ml-0 rounded-full bg-gray-200 border-2 border-[#CBFC01] overflow-hidden relative"
