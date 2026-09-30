@@ -3,10 +3,30 @@
 import { Link, Button } from "@heroui/react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { MdOutlineShoppingBag } from "react-icons/md";
 
 export default function Navbar() {
   const pathname = usePathname();
+
+  const [cartCount, setCartCount] = useState(0);
+
+  useEffect(() => {
+    const updateCount = () => {
+      const storedCourses = JSON.parse(
+        localStorage.getItem("enrolledCourses") || "[]",
+      );
+      setCartCount(storedCourses.length);
+    };
+
+    updateCount();
+
+    window.addEventListener("cartUpdated", updateCount);
+
+    return () => {
+      window.removeEventListener("cartUpdated", updateCount);
+    };
+  }, []);
 
   const isActive = (path: string) => {
     if (path === "/") {
@@ -65,6 +85,11 @@ export default function Navbar() {
 
           <Button className="bg-transparent min-w-0 p-2">
             <MdOutlineShoppingBag className="h-6 w-6 text-white" />
+            {cartCount > 0 && (
+              <span className="absolute top-1 right-1 bg-red-500 text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full shadow-sm">
+                {cartCount}
+              </span>
+            )}
           </Button>
         </div>
       </header>

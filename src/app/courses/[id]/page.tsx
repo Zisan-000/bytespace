@@ -11,6 +11,7 @@ import { FiFolder, FiVideo, FiAward, FiTool } from "react-icons/fi";
 import coursesData from "@/lib/data/data.json";
 import CourseTabs from "@/components/CourseTabs";
 import Link from "next/link";
+import EnrollButton from "@/components/EnrollButton";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -148,9 +149,7 @@ export default async function CourseDetailsPage({ params }: Props) {
                 </span>
               </div>
 
-              <button className="w-full bg-[#CBFC01] text-black font-bold text-[15px] py-4 rounded-full transition-transform hover:scale-105 active:scale-95 mb-8">
-                Enroll Now
-              </button>
+              <EnrollButton courseId={course.id} />
 
               <h4 className="font-bold text-gray-900 mb-5 text-[15px]">
                 This course include
