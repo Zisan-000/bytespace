@@ -6,7 +6,7 @@ export default function SignUpPage() {
   return (
     <main className="min-h-screen bg-[rgb(0,59,226)] bg-grid-pattern flex items-center justify-center p-6 md:p-12 overflow-hidden">
       <div className="w-full max-w-360 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
-        <div className="flex flex-col text-white w-full mb-10 max-w-150">
+        <div className=" animate-float flex flex-col text-white w-full mb-10 max-w-150">
           <div className="flex items-center gap-2 mb-20">
             <Image
               src="/logo.png"

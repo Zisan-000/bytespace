@@ -11,7 +11,7 @@ export default function HomeHero() {
   return (
     <main className="flex flex-col min-h-screen w-full bg-white">
       <div className="bg-[#003BE2] bg-grid-pattern relative overflow-hidden w-full pt-20">
-        <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="animate-float absolute inset-0 z-0 pointer-events-none">
           <Image
             src={ornament}
             alt="3D Ornament"
@@ -20,8 +20,8 @@ export default function HomeHero() {
           />
         </div>
         <section className="mx-auto max-w-360 px-6 py-20 lg:px-12 relative z-10 flex flex-col items-center">
-          <div className="text-center flex flex-col items-center z-20">
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight tracking-tight max-w-300">
+          <div className="animate-fade-in-up opacity-0 text-center flex flex-col items-center z-20">
+            <h1 className=" text-5xl md:text-7xl font-extrabold text-white leading-tight tracking-tight max-w-300">
               Get Access to Hundreds <br /> Courses Available
             </h1>
             <p className="text-white/80 mt-6 text-lg md:text-xl max-w-300">
@@ -44,7 +44,7 @@ export default function HomeHero() {
             </div>
           </div>
 
-          <div className="relative mt-16 w-full max-w-200 flex justify-center z-20 min-h-112.5">
+          <div className="animate-fade-in-up opacity-0 relative mt-16 w-full max-w-200 flex justify-center z-20 min-h-112.5">
             <div
               className="absolute bottom-0 w-162.5 h-162.5 bg-[#CBFC01] rounded-full z-10 transform translate-y-[10%]
           translate-x-[-5%] top-10"
@@ -140,7 +140,7 @@ export default function HomeHero() {
       <section className="w-full  bottom-100  z-30 ">
         <FeatureSection />
       </section>
-      <section className="w-full h-full bottom-130  z-30 ">
+      <section className="animate-float w-full h-full bottom-130  z-30 ">
         <CallToAction />
       </section>
       <section className="w-full h-full bottom-150  z-30 ">

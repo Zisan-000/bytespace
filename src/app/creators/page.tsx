@@ -18,7 +18,7 @@ export default function CreatorPage() {
   return (
     <main className="w-full flex flex-col bg-white min-h-screen">
       <section className="w-full bg-[#003BE2] bg-grid-pattern pt-20 pb-16 px-6">
-        <div className="mx-auto max-w-360 lg:px-12">
+        <div className="animate-fade-in-up opacity-0 mx-auto max-w-360 lg:px-12">
           <div className="flex items-center gap-6 mb-8">
             <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-white/10 relative shrink-0 shadow-lg">
               <Image
@@ -99,7 +99,7 @@ export default function CreatorPage() {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="animate-fade-in-up opacity-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {creatorCourses.map((course) => (
             <Link
               href={`/courses/${course.id}`}

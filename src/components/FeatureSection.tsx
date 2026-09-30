@@ -25,7 +25,6 @@ export default function FeatureSection() {
                 resources you need.
               </p>
 
-              {/* Stats Row */}
               <div className="flex gap-12">
                 <div className="flex flex-col">
                   <span className="text-3xl font-bold text-[#003BE2] mb-1">
@@ -54,9 +53,7 @@ export default function FeatureSection() {
               </div>
             </div>
 
-            {/* Right Image Composite */}
             <div className="relative w-full max-w-125 mx-auto aspect-square flex justify-center items-end mt-10 lg:mt-0">
-              {/* Green Ring Frame */}
               <div className="absolute inset-0 top-10 left-70 z-40 flex items-center justify-center">
                 <Image
                   src="/Frame.png"
@@ -67,7 +64,6 @@ export default function FeatureSection() {
                 />
               </div>
 
-              {/* Boy Profile */}
               <Image
                 src="/home-profile.png"
                 alt="Student"
@@ -76,7 +72,7 @@ export default function FeatureSection() {
                 className="relative z-10 object-contain object-bottom h-[90%]"
               />
 
-              <div className="absolute top-[25%] left-[-2%] z-0 bg-white rounded-2xl shadow-xl p-3 flex flex-col gap-2  ">
+              <div className="animate-float absolute top-[25%] left-[-2%] z-0 bg-white rounded-2xl shadow-xl p-3 flex flex-col gap-2  ">
                 <div className="w-full bg-gray-200 rounded-lg overflow-hidden relative">
                   <Image
                     src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&q=80"
@@ -101,7 +97,6 @@ export default function FeatureSection() {
                 </div>
               </div>
 
-              {/* Floating Card: Learning Progress (Right) */}
               <div className="absolute top-[55%] right-[16%] z-20 w-40 bg-white rounded-2xl shadow-xl p-4 flex flex-col">
                 <span className="font-medium text-[10px] text-gray-500 mb-1">
                   Learning Progress
@@ -120,9 +115,7 @@ export default function FeatureSection() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Image Composite */}
             <div className="relative w-full max-w-125 mx-auto aspect-square flex justify-center items-end order-2 lg:order-1 mt-10 lg:mt-0">
-              {/* Green Ring Frame */}
               <div className="absolute inset-0 left-45 bottom-20 scale-x-[-1] z-20 flex items-center justify-center">
                 <Image
                   src="/Frame.png"
@@ -133,17 +126,15 @@ export default function FeatureSection() {
                 />
               </div>
 
-              {/* Girl Profile */}
               <Image
                 src="/girls.png"
                 alt="Creator"
                 width={400}
                 height={500}
-                className="relative z-10 object-contain object-bottom h-[90%]"
+                className=" relative z-10 object-contain object-bottom h-[90%]"
               />
 
-              {/* Floating Card: Total Revenue (Top Left) */}
-              <div className="absolute top-[20%] left-[-5%] z-0 w-70 bg-[#003BE2] rounded-xl shadow-xl p-3 text-white">
+              <div className="animate-float absolute top-[20%] left-[-5%] z-0 w-70 bg-[#003BE2] rounded-xl shadow-xl p-3 text-white">
                 <div className="text-[10px] opacity-80 leading-tight mb-1">
                   Total Revenue
                   <br />
@@ -158,8 +149,7 @@ export default function FeatureSection() {
                 </div>
               </div>
 
-              {/* Floating Card: YTD Revenue (Mid Left) */}
-              <div className="absolute top-[45%] left-[-5%] z-0 w-35 bg-[#003BE2] rounded-xl shadow-xl p-3 text-white">
+              <div className="animate-float absolute top-[45%] left-[-5%] z-0 w-35 bg-[#003BE2] rounded-xl shadow-xl p-3 text-white">
                 <div className="text-[10px] opacity-80 leading-tight mb-1">
                   Year to Date
                   <br />
@@ -171,7 +161,6 @@ export default function FeatureSection() {
                 </div>
               </div>
 
-              {/* Floating Card: Happy Students (Bottom Right) */}
               <div className="absolute bottom-[22%] right-[7%] z-20 w-55 bg-white rounded-2xl shadow-xl p-3 flex flex-col gap-2">
                 <div className="flex justify-between items-center w-full">
                   <h3 className="font-bold text-[12px] text-black m-0">
@@ -202,7 +191,6 @@ export default function FeatureSection() {
                 </div>
               </div>
 
-              {/* Abstract ZigZag Decoration */}
               <svg
                 className="absolute top-[40%] right-[10%] z-20 w-12 text-[#CBFC01]"
                 viewBox="0 0 50 50"
@@ -226,7 +214,6 @@ export default function FeatureSection() {
               </svg>
             </div>
 
-            {/* Right Text */}
             <div className="flex flex-col max-w-lg lg:pl-10 order-1 lg:order-2">
               <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
                 Create & Manage Courses Easily.
@@ -236,7 +223,6 @@ export default function FeatureSection() {
                 publication, and administration of educational courses.
               </p>
 
-              {/* Checklist */}
               <ul className="flex flex-col gap-4">
                 {[
                   "Share Your Expertise",
