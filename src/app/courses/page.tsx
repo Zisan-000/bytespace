@@ -76,7 +76,7 @@ export default function CoursesPage() {
   return (
     <main className="w-full flex flex-col bg-white min-h-screen">
       <section className="w-full bg-[#003BE2] bg-grid-pattern py-20 px-6 flex flex-col items-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-8 tracking-tight">
+        <h1 className="animate-fade-in-up opacity-0 text-4xl md:text-5xl font-extrabold text-white mb-8 tracking-tight">
           Find Your Next Course
         </h1>
 
@@ -134,11 +134,12 @@ export default function CoursesPage() {
 
         {currentCourses.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
-            {currentCourses.map((course) => (
+            {currentCourses.map((course, index) => (
               <Link
                 href={`/courses/${course.id}`}
                 key={course.id}
-                className="group flex flex-col bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden  p-2 transition-all hover:shadow-lg hover:border-gray-300"
+                className="animate-fade-in-up opacity-0 group flex flex-col bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden  p-2 transition-all hover:shadow-lg hover:border-gray-300"
+                style={{ animationDelay: `${index * 75}ms` }}
               >
                 <div className="relative h-72 rounded-xl overflow-hidden mb-4">
                   <Image
